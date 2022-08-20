@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="ingame.css">
+</head>
+<body>
+    <div class="container">
+        <div id="ingame" class="justify-center flex-column">
+           <!-- heads up display-->
+            <div id="hud">
+                <div class="hud-list">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarOccupied"></div>
+                    </div>
+                </div>
+                <div class="hud-list">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h2 id="question">What is your name</h2>
+            <div class="option-container">
+                <p class="option-prefix">A</p>
+                <p class="option-text" data-number="1">Option</p>
+            </div>
+            <div class="option-container">
+                <p class="option-prefix">B</p>
+                <p class="option-text" data-number="2">Option 2</p>
+            </div>
+            <div class="option-container">
+                <p class="option-prefix">C</p>
+                <p class="option-text" data-number="3">Option 3</p>
+            </div>
+            <div class="option-container">
+                <p class="option-prefix">D</p>
+                <p class="option-text" data-number="4">Option 4</p>
+            </div>
+        </div>
+    </div>
+    <script src="ingame.js"></script>
+</body>
+</html>
